@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack or Snooze</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="stories.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <!-- top nav bar -->
+    <nav>
+        <div class="navbar-brand">
+            <a class="nav-link" href="#" id="nav-all">Hack or Snooze</a>
+        </div>
+        <div class="main-nav-links hidden">
+            " | "
+            <a class="nav-link" href="#" id="nav-submit-story">Submit</a>
+            " | "
+            <a class="nav-link" href="#" id="nav-favorites">Favorites</a>
+            " | "
+            <a class="nav-link" href="#" id="nav-my-stories">My Stories</a>
+        </div>
+        <div class="nav-right">
+            <a class="nav-link" href="#" id="nav-login">Login/Sign-Up</a>
+            <a class="nav-link" href="#" id="nav-user-profile"></a>
+            <a class="hidden" id="nav-logout" href="#" id="nav-user-profile">
+                <small>(Logout)</small>
+            </a>
+        </div>
+    </nav>
+    <!-- area for stories -->
+    <section class="stories-container container">
+        <!-- form for submitted new story -->
+        <form action class="hiddent" id="submit-form">
+            <div>
+                <label for="create-author">Author</label>
+                <input if="create-title" required placeholder="story title">
+            </div>
+            <div>
+                <label for="create-title">Title</label>
+                <input id="create-title" required placeholder="story title">
+            </div>
+            <div>
+                <label for="create-url">URL</label>
+                <input id="create-url" required type="url" placeholder="story url">
+            </div>
+            <button type="submit">Submit</button>
+            <hr>
+        </form>
+        <!-- loading message-->
+        <!-- list of all stories -->
+        <ol id="all-stories-list" class="stories-list">
+            <li id="acee5401-5837-42c2-8c73-cf5b366a2a38">
+                <a href="http://google.com" target="a_blank" class="story-link"> Hello World </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by jacob</small>
+                <small class="story-user">posted by jacob01</small>
+            </li>
+            <li id="ad5218a8-c25c-47d4-ba73-0e7531713a5d">
+                <a href="http://meow.com" target="a_blank" class="story-link"> Test </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Me</small>
+                <small class="story-user">posted by jacob01</small>
+            </li>
+            <li id="f2f88427-ce23-46e4-91e4-257e6180508d">
+                <a href="https://meow.com" target="a_blank" class="story-link"> New Cat Test 4</a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Me2</small>
+                <small class="story-user">posted by samsadrazodi3</small>
+            </li>
+            <li id="8e6ff748-dc69-4457-aafa-a4bd11d2a12a">
+                <a href="https://meow.com" target="a_blank" class="story-link"> New Cat Test 3 </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Me2</small>
+                <small class="story-user">posted by samsadrazodi3</small>
+            </li>
+            <li id="68af97fc-5a63-43bc-a721-8b68af4ad709">
+                <a href="https://meow.com" target="a_blank" class="story-link"> New Cat Test 1 </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Me2</small>
+                <small class="story-user">posted by samsadrazodi3</small>
+            </li>
+            <li id="0d94bb7d-8b06-4f39-b6bb-76f5fda66aa6">
+                <a href="https://meow.com" target="a_blank" class="story-link"> New Cat Test 4 </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Me2</small>
+                <small class="story-user">posted by samsadrazodi3</small>
+            </li>
+            <li id="7b4fe45e-db7c-4a3b-b0ff-5a5c9b8e7e79">
+                <a href="https://meow.com" target="a_blank" class="story-link"> New Cat Test 3 </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Me2</small>
+                <small class="story-user">posted by samsadrazodi3</small>
+            </li>
+            <li id="da4ba020-0946-4b94-ab09-5ee364012dd3">
+                <a href="https://meow.com" target="a_blank" class="story-link"> New Cat Test 1 </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Me2</small>
+                <small class="story-user">posted by samsadrazodi3</small>
+            </li>
+            <li id="212c9061-965d-4fbd-9d5f-afbb2fb7e055">
+                <a href="https://example.com" target="a_blank" class="story-link"> Test </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">
+                    "by "
+                    <script>console.log('hi')</script>
+                </small>
+                <small class="story-user">posted by springboard</small>
+            </li>
+            <li id="83f1e8a4-05e3-4ca9-9737-ac7332bac918">
+                <a href="https://example.com" target="a_blank" class="story-link"> fa </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">
+                    "by "
+                    <h1>Hi</h1>
+                </small>
+                <small class="story-user">posted by springboard</small>
+            </li>
+            <li id="8301fd55-5401-4e72-96a6-d81789b27197">
+                <a href="https://example.com" target="a_blank" class="story-link"> test </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by test</small>
+                <small class="story-user">posted by springboard</small>
+            </li>
+            <li id="16ee947b-46e3-4e98-815e-a19fdcf63124">
+                <a href="https://dev.to/johnpaul/top-10-html-elements-to-use-in-2023-3b04" target="a_blank" class="story-link"> Top 10 html elements to use in 2023 </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Johnpaul Ezz</small>
+                <small class="story-user">posted by noushin_o</small>
+            </li>
+            <li id="15ebf18b-0193-468c-8765-41e925769a0a">
+                <a href="https://www.ccn.com/buffett-indicator-warns-stocks-doomed-worse-crash-than-2008/" target="a_blank"
+                class="story-link">" 'Buffett Indicator' Warns Stockes Doomed For Worse Crash Than 2008 "</a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Elie Schoppik</small>
+                <small class="story-user">posted by rohit</small>
+            </li>
+            <li id="bded7354-3fb1-45de-810f-60f8ff010598">
+                <a href="https://www.springboard.com" target="a_blank" class="story-link"> Springboards latest news! </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Elie Schoppik</small>
+                <small class="story-user">posted by rohit</small>
+            </li>
+            <li id="934e7330-2e50-44fd-99f8-c56ffb448c28">
+                <a href="https://github.com/spieglt/nestur" target="a_blank" class="story-link"> NES Emulator in Rust </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Elie Schoppik</small>
+                <small class="story-user">posted by rohit</small>
+            </li>
+            <li id="a80e1daf-2b88-4757-9e4d-5a4f77a295cf">
+                <a href="https://www.google.com" target="a_blank" class="story-link"> Google! </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Elie Schoppik</small>
+                <small class="story-user">posted by rohit</small>
+            </li>
+            <li id="4fe4c41a-bc25-47b1-a998-9c560136269e">
+                <a href="http://catless.ncl.ac.uk/Risks/16.54.html#subj2" target="a_blank" class="story-link"> " Ottawa Library fines people using unreliable automatic calling system (1994) " </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Elie Schoppik</small>
+                <small class="story-user">posted by rohit</small>
+            </li>
+            <li id="bb15cec1-deb2-45d3-85a3-8f52380550e0">
+                <a href="https://www.theatlantic.com/magazine/archive/2019/05/stock-value-satellite-images-investing/586009/"
+                target="a_blank" class="story-link"> Stock Picks from Space (2019) </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Elie Schoppik</small>
+                <small class="story-user">posted by rohit</small>
+            </li>
+            <li id="a793ede0-bc2a-4405-af6f-311f1d2caa9a">
+                <a href="http://blog.eladgil.com/2020/01/products-i-wish-existed-2020-edition.html"
+                target="a_blank" class="story-link"> Products I wish existed </a>
+                <small class="story-hostname">(hostname.com)</small>
+                <small class="story-author">by Elie Schoppik</small>
+                <small class="story-user">posted by rohit</small>
+            </li>
+        </ol>
+        <!-- list of stories favorited by user-->
+        <ol id="favorited-stories" class="hidden stories-list"></ol>
+        <!-- list of stories by user -->
+        <ol id="my-stories" class="hidden stories-list"></ol>
+    </section>
+    <!-- login and signup forms -->
+    <section class="account-forms-container container">
+        <!-- login form -->
+        <form action="#" id="login-form" class="account-form-hidden" method="post">
+            <h4>Login</h4>
+            <div class="login-input">
+                <label for="login-username">Username</label>
+                <input id="login-username" autocomplete="current-username">
+            </div>
+            <div class="login-input">
+                <label for="login-password">Password</label>
+                <input id="login-password" type="password" autocomplete="current-password">
+            </div>
+            <button type="submit">Login</button>
+            <hr>
+        </form>
+        <!-- Signup Form -->
+        <form action="#" id="signup-form" class="account-form hidden" method="post">
+            <h4>Create Account</h4>
+            <div class="login-input">
+                <label for="signup-name">Name</label>
+                <input id="signup-name" autocapitalize="words">
+            </div>
+            <div class="login-input">
+                <label for="signup-username">Username</label>
+                <input id="signup-username" autocomplete="new-username">
+            </div>
+            <div class="login-input">
+                <label for="signup-password">Password</label>
+                <input id="signup-password" autocomplete="new-password" type="password">
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+    </section>
+    <!-- User profile -->
+    <section id="user-profile" class="hidden">
+        <div class="user-profile-box container">
+            <h4>User Profile Info</h4>
+            <section>
+                <div>
+                    "Name: "
+                    <span id="profile-name">Name:</span>
+                </div>
+                <div>
+                    "Username: "
+                    <span id="profile-username">Username:</span>
+                </div>
+                <div>
+                    "Account Created: "
+                    <span id="profile-account-date"></span>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="main.js"></script>
+    <script src="models.js"></script>
+    <script src="nav.js"></script>
+    <script src="stories.js"></script>
+    <script src="users.js"></script>
+</body>
+</html>
